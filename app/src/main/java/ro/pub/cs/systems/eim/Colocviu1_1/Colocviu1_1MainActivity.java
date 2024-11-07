@@ -44,6 +44,7 @@ public class Colocviu1_1MainActivity extends AppCompatActivity {
                 } else {
                 text.setText(text.getText() + ", South");}
             }
+            text.setText(text.getText() + String.valueOf(number));
         }
     }
 
@@ -65,9 +66,7 @@ public class Colocviu1_1MainActivity extends AppCompatActivity {
         Button south_b = (Button) findViewById(R.id.button_south);
         south_b.setOnClickListener(buttonClickListener);
 
-        if (savedInstanceState.containsKey("Total")) {
-            number = Integer.valueOf(savedInstanceState.getString("Total"));
-        }
+
     }
 
     @Override
